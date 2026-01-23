@@ -8,7 +8,7 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="md:col-span-2">
                         <Link href="/" className="text-2xl font-serif font-black tracking-tight mb-4 block text-[#0f172a]">
-                            Jitesh<span className="text-primary">.</span>
+                            Jitesh<span className="text-primary"></span>
                         </Link>
                         <p className="text-gray-500 max-w-xs leading-relaxed font-medium">
                             Creating meaningful digital experiences through

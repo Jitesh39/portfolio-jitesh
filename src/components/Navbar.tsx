@@ -21,7 +21,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-6 sm:px-12 py-6 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-serif font-black tracking-tight text-[#0f172a]">
-                    Jitesh<span className="text-primary">.</span>
+                    Jitesh<span className="text-black">.</span>
                 </Link>
 
                 {/* Desktop Menu */}
