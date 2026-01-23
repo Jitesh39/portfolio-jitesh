@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
+/* 
+  Tailwind CSS v4 @theme rule 
+  Note: If you see "Unknown at rule @theme" warning in VS Code, 
+        it is because the built-in CSS validator hasn't been updated for Tailwind v4 yet.
+        You can safely ignore it or use the Tailwind CSS IntelliSense extension.
+*/
+@theme {
+  --color-primary: #0081ff;
+  /* Refined Electric Blue */
+  --color-accent: #00e0ff;
+  --font-serif: "Playfair Display", serif;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  /* Deep Navy/Slate instead of pure black */
+  --primary: #0081ff;
+  --accent: #00e0ff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif font-bold tracking-tight;
+  }
 }
