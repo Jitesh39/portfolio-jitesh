@@ -5,35 +5,48 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "TheStudySmith",
-        category: "Wordpress",
-        image: "/studysmith.png",
+        title: "abc",
+        category: "abc",
+        image: "",
+        // image: "/studysmith.png",
         link: "#",
     },
     {
-        title: "Minimalist Dashboard",
-        category: "UI/UX Design",
+        title: "abc",
+        category: "abc",
         image: "",
         link: "#",
     },
-    // {
-    //     title: "AI Driven Analytics",
-    //     category: "Machine Learning",
-    //     image: "",
-    //     link: "#",
-    // },
-    // {
-    //     title: "Sustainable App",
-    //     category: "Mobile Design",
-    //     image: "",
-    //     link: "#",
-    // },
+    {
+        title: "abc",
+        category: "abc",
+        image: "",
+        link: "#",
+    },
+    {
+        title: "abc",
+        category: "abc",
+        image: "",
+        link: "#",
+    },
+    {
+        title: "abc",
+        category: "abc",
+        image: "",
+        link: "#",
+    },
+    {
+        title: "abc",
+        category: "abc",
+        image: "",
+        link: "#",
+    },
 ];
 
 export default function ProjectsGrid() {
     return (
         <section id="work" className="max-w-7xl mx-auto px-6 sm:px-12 py-24">
-            <div className="flex justify-center items-center mb-16 ">
+            <div className="flex justify-center items-center mb-16 ,-50">
                 <div className="flex flex-col items-center text-center">
                     <h2 className="text-4xl md:text-5xl mb-4">
                         Featured Projects
@@ -46,7 +59,7 @@ export default function ProjectsGrid() {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}

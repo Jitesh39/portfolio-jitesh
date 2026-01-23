@@ -20,7 +20,7 @@ export default function ProjectCard({ title, category, image, link }: ProjectPro
             viewport={{ once: true }}
             className="group cursor-pointer"
         >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100 mb-4">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-gray-100 mb-3">
                 {image ? (
                     <Image
                         src={image}
@@ -29,18 +29,18 @@ export default function ProjectCard({ title, category, image, link }: ProjectPro
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                 ) : (
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-500">
+                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm group-hover:scale-105 transition-transform duration-500">
                         Project Image
                     </div>
                 )}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-                <div className="absolute top-4 right-4 p-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm">
-                    <ArrowUpRight className="w-5 h-5" />
+                <div className="absolute top-3 right-3 p-1.5 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm">
+                    <ArrowUpRight className="w-4 h-4" />
                 </div>
             </div>
             <div>
-                <p className="text-sm text-gray-500 mb-1">{category}</p>
-                <h3 className="text-xl font-medium">{title}</h3>
+                <p className="text-xs text-gray-500 mb-0.5">{category}</p>
+                <h3 className="text-base font-medium">{title}</h3>
             </div>
         </motion.div>
     );

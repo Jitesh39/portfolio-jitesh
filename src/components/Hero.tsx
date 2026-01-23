@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 pt-3 pb-20 overflow-hidden bg-white">
+        <section className="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 pt-32 pb-20 overflow-hidden bg-white">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -17,8 +17,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-                    I'm a passionate Full-stack Developer and Data Analyst
-                    specializing in MERN stack, AI, and visualization tools.
+                    Software Developer with expertise in building scalable applications using Next.js and the MERN stack.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

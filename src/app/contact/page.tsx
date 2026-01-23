@@ -131,12 +131,12 @@ export default function Contact() {
 
                             <div>
                                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Phone</p>
-                                <p className="text-lg font-medium text-gray-900">+91 987654321</p>
+                                <p className="text-lg font-medium text-gray-900">+91 9525129168</p>
                             </div>
 
                             <div>
                                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Based in</p>
-                                <p className="text-lg font-medium text-gray-900 font-semibold">Vadodara</p>
+                                <p className="text-lg font-medium text-gray-900 font-semibold">India</p>
                             </div>
 
                             <div>

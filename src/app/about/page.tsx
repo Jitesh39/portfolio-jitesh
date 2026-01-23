@@ -34,12 +34,12 @@ const education = [
     {
         period: "2010 - 2020",
         degree: "Class X",
-        school: "Dr. D RAM DAV Public School"
+        school: "Dr. D RAM DAV Public School , Patna , Bihar"
     }
 
 ];
 
-const skills = ["UI/UX Design", "Full Stack Developer", "ML Intern"];
+const skills = ["Full Stack Developer", "Web Developer", "UI/UX Design"];
 
 export default function About() {
     return (
@@ -56,9 +56,9 @@ export default function About() {
                         <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8">About Me</h1>
                         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                             My name is Jitesh, and I am currently pursuing a Bachelor of
-                            Technology (B.Tech) in <span className="text-primary font-medium">Computer Science Engineering</span> (CSE) with a
-                            specialization in Artificial Intelligence and Machine Learning (AI/ML)
-                            from Polaris School of Technology.
+                            Technology (B.Tech) in <span className="text-primary font-medium">Computer Science Engineering</span> (CSE)
+                            from Parul Institute of Technology.
+
                         </p>
 
                         <div className="flex flex-wrap gap-3 mb-8">
@@ -93,7 +93,7 @@ export default function About() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative aspect-square w-120 rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200"
+                        className="relative aspect-square w-115 rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200"
                     >
                         <Image
                             src="/jit_img.jpeg"

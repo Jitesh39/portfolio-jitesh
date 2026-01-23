@@ -10,9 +10,8 @@ export default function Footer() {
                         <Link href="/" className="text-2xl font-serif font-black tracking-tight mb-4 block text-[#0f172a]">
                             Jitesh<span className="text-primary"></span>
                         </Link>
-                        <p className="text-gray-500 max-w-xs leading-relaxed font-medium">
-                            Creating meaningful digital experiences through
-                            thoughtful design and development.
+                        <p className="text-black-500 max-w-xs leading-relaxed font-medium">
+                            Delivering robust, user-focused digital solutions through modern software development practices.
                         </p>
                     </div>
 
@@ -44,8 +43,8 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="text-center pt-4 border-t border-gray-50 py-1">
-                    <p className="text-gray-400 text-sm">
-                        © 2026 Portfolio. All rights reserved.
+                    <p className="text-black-500   text-sm">
+                        © 2026 All rights reserved, Jitesh
                     </p>
                 </div>
             </div>
