@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "abc",
-        category: "abc",
-        image: "",
+        title: "TheStudySmith",
+        category: "wordpress, custom theme, plugin development",
+        image: "/studysmith.png",
         // image: "/studysmith.png",
-        link: "#",
+        link: "https://thestudysmith9.wordpress.com/",
     },
     {
-        title: "abc",
-        category: "abc",
-        image: "",
-        link: "#",
+        title: "ExploreIndia",
+        category: "frontend, react, tailwindcss",
+        image: "/exploreindia.png",
+        link: "https://exploreind.netlify.app/",
     },
     {
         title: "abc",
