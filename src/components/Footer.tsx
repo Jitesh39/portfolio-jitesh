@@ -1,6 +1,32 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+    const [dateTime, setDateTime] = useState({
+        year: new Date().getFullYear(),
+        time: ""
+    });
+
+    useEffect(() => {
+        // Set initial time on mount to avoid hydration mismatch
+        const updateDateTime = () => {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+            setDateTime({
+                year: now.getFullYear(),
+                time: `${dateStr} | ${timeStr}`
+            });
+        };
+
+        updateDateTime();
+        const interval = setInterval(updateDateTime, 60000); // Update every minute
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <footer className="border-t border-gray-100 pt-20 pb-12">
             <div className="max-w-7xl mx-auto px-6 sm:px-12">
@@ -42,12 +68,16 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="text-center pt-4 border-t border-gray-50 py-1">
-                    <p className="text-black-500   text-sm">
-                        © 2026 All rights reserved.
+                <div className="flex flex-col md:flex-row justify-between items-center pt-4 border-t border-gray-50 py-1">
+                    <p className="text-black-500 text-sm mb-2 md:mb-0">
+                        © 2025 - {dateTime.year} All rights reserved.
                     </p>
+                    <div className="text-black-500 text-xs font-medium bg-gray-50 px-3 py-1 rounded-full border border-gray-100">
+                        {dateTime.time}
+                    </div>
                 </div>
             </div>
         </footer>
     );
 }
+
