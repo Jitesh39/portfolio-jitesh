@@ -44,7 +44,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="text-center pt-4 border-t border-gray-50 py-1">
                     <p className="text-black-500   text-sm">
-                        © 2026 All rights reserved, Jitesh
+                        © 2026 All rights reserved.
                     </p>
                 </div>
             </div>
